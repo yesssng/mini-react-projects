@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 
-//TODO: 
 
 let persons = [
     { 
@@ -12,7 +11,7 @@ let persons = [
     { 
       id: 2,
       name: "Ada Lovelace", 
-      "number": "39-44-5323523"
+      number: "39-44-5323523"
     },
     { 
       id: 3,
@@ -27,6 +26,8 @@ let persons = [
 ]
 
 app.use(express.static('dist'))
+
+console.log(persons)
 
 
 const requestLogger = (request, response, next) => {
